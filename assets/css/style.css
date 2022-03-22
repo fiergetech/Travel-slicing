@@ -102,7 +102,7 @@ section{
 }
 .home-wrapper .subheading{
     font-size: 1.125rem;
-    color: black;
+    color: #4a4a4a;
     max-width: 500px;
     margin: 25px 0;
 }
@@ -196,7 +196,7 @@ section{
 .form-panel .btn-search{
     position: relative;
     background-color: var(--second-color);
-    padding: 15px;
+    padding: 20px;
     border-radius: 50px;
     color: #fff;
     display: flex;
@@ -225,6 +225,201 @@ section{
     flex: 0 0 50%;
 }
 /*home end*/
+
+/*service start*/
+.service .service-wrapper{
+    margin: auto;
+}
+.service-wrapper .row1{
+    text-align: center;
+
+}
+.service-wrapper .label-service{
+    font-size: 20px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--second-color);
+
+}
+.service-wrapper .heading-service{
+    font-size: 40px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: #4a4a4a;
+    margin: 10px;
+}
+.service-wrapper .subheading-service{
+    font-size: 20px;
+
+}
+.service-wrapper .row2{
+    margin: 50px;
+    background-color: var(--main-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 50px 50px 0 0;
+}
+.row2 .box-service{
+    position: relative;
+    max-width: 300px;
+    text-align: center;
+    padding: 30px;
+
+}
+.box-service i{
+    font-size: 2.5rem;
+}
+.box-service h3{
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+.box-service .btn-learn{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    background: rgb(250, 162, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 50px 0 0;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    transition: 0.4s ease-in-out;
+
+
+}
+.box-service:hover .btn-learn{
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    transition: 0.4s ease-in-out;
+}
+.btn-learn a{
+    color: #fff;
+}
+/*service end*/
+
+/* produk start*/
+.produk .produk-wrapper{
+    margin: auto;
+
+}
+.produk-wrapper .row1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.row1 .label-produk{
+    font-size: 20px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--second-color);
+}
+
+.row1 .heading-produk{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    color: #4a4a4a;
+    margin-top: 10px;
+}
+
+.row1 .toggle-slider i{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.produk-wrapper .row2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+.produk-wrapper .card-produk{
+    position: relative;
+    width: 400px;
+    border-radius: 20px;
+    overflow-y: hidden;
+
+}
+.row2 .detail-produk{
+    background-color: rgba(255, 255, 255, 0.623);
+    position: absolute;
+    bottom: -50%;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.171);
+    transition: .5s ease-in-out;
+
+}
+.card-produk:hover .detail-produk{
+    bottom: 0;
+    transition: .5s ease-in-out;
+}
+.detail-produk .kategori{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.kategori .label-kategori{
+    padding: 5px 20px;
+    background-color: var(--second-color);
+    color: #fff;
+    border-radius: 5px;
+}
+.kategori .price{
+    background-color: var(--main-color);
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail-produk .title-card h1{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    color: #4a4a4a;
+
+}
+.detail-produk .review{
+    display: flex;
+    gap: 10px;
+
+}
+.review i{
+    color: rgb(224, 224, 12);
+}
+.detail-produk .body-card{
+    margin: 25px 0;
+}
+.detail-produk .btn-produk{
+    background-color: var(--second-color);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 50px;
+
+}
+.btn-produk a{
+    color: #fff;
+}
+/*produk end */
+
 @media screen and (max-width :991px) {
     .nav-wrapper .menu-wrapper .menu{
         gap: 50px;
